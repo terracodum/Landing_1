@@ -14,20 +14,21 @@ p {
 }
 
 body {
+  min-width: 850px;
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
-header {
+.header {
   height: 100vh;
   text-align: center;
   background-color: #eee;
-  background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/03/cover.png);
+  background-image: url(cover.png);
   background-position: center;
   background-size: cover;
 }
 
-h1 {
-  padding-top: 270px;
+.header-title {
+  margin: auto;
   color: white;
   font-weight: 800;
   font-size: 74px;
@@ -35,22 +36,30 @@ h1 {
 }
 
 .overlay {
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgb(95 13 238 / 0.5);
 }
 
 .content {
+  width: 770px;
+  margin: 100px auto 50px;
   font-size: 0;
 }
 
 .card {
   display: inline-block;
   width: 360px;
+  margin-right: 50px;
   margin-bottom: 50px;
-  border: 1px solid rgb(250 50 50 / 0.4);
+  border: 1px solid black;
   padding: 25px 25px 30px;
-  background-color: #e3f3ff;
+  box-shadow: 4px 4px 0 black;
+}
+
+.no-right-margin {
+  margin-right: 0;
 }
 
 .card-title {
@@ -68,6 +77,18 @@ h1 {
 .card-image {
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid rgb(250 50 50 / 0.4);
+  border: 1px solid black;
 }
 
+.footer {
+  display: flex;
+  height: 200px;
+  background-color: #5f0dee;
+}
+
+.footer-author {
+  margin: auto;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
